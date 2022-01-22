@@ -1,0 +1,44 @@
+local Player = game.Players.LocalPlayer
+
+Player.Chatted:connect(function(cht)
+	if cht:match("/open UTG") then
+		loadstring(game:HttpGet("https://pastebin.com/raw/NhRrqGgy", true))() -- make sure you add in the script too
+	elseif cht:match(";admin") then -- add what you want to say for the script to execute so i put "admin" because i want it to load an admin script
+		loadstring(game:HttpGet("https://pastebin.com/raw/iM2Hhq68", true))()
+	end
+end)
+
+-- now we're going to add a simple script that lets us know when the script is working
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Loaded UTG";
+    Text = "say /open UTG on the chat for UTG appear";
+})
+
+-- this script will give you a pop up notification for when ever you load the script
+
+-- im also going to show you how to convert normal scripts into pastebin links
+
+-- lets get back to testing the script
+
+-- make sure you copy the whole scriot (Control A) than copy it (Control C) than paste it into your executor like im going to show (COntrol V to Paste)
+
+-- as you can see, its working perfectly 
+
+-- now we're going to cover adding multiple script to your admin script
+
+-- as you can see from inside the synapse executor some times you get scripts that are just way to big to put into an executor
+-- im now going to show you how to convert those big scripts into a loadstring which will compact the script. it's very simple'
+
+-- loadstring(game:HttpGet("https://pastebin.com/raw/iM2Hhq68", true))() -- now you're going to need a already made pastebin link to do this
+--  i will add this loadstring link in the description so you can use it when you're making yours'
+-- all you're going to need to do is replace the url of the old one with the url of the new one you made'
+-- as im going to show
+-- now all you're going to do is just copy the whole link and put it into the script '
+	
+
+-- this is going to be a good shit.
+
+-- For open the Gui you need say /open UTG for it opens :)
+	
+-- This is an Remake of Ultimate Trolling GUI so subscribe my channel for more updates.
