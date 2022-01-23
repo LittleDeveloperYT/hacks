@@ -1,0 +1,532 @@
+print("Void Hub Loaded!✅ Made by LittleDev#4216")
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local DarkDex = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local InfiniteYield = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UTG = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local FunkyFriday = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local ButterloafCannon = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Prozo = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Hatch = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Whacky = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Pig = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Adopt = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Arsenal = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Build = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local ZO = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UIGradient_2 = Instance.new("UIGradient")
+local Open = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local Updates = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local HubOpener = Instance.new("TextButton")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_18 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local Line = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Main.Position = UDim2.new(0.138153568, 0, 0.127569884, 0)
+Main.Size = UDim2.new(0, 696, 0, 440)
+Main.Visible = false
+local UIS = game:GetService("UserInputService")
+function dragify(Frame)
+	dragToggle = nil
+	local dragSpeed = 0
+	dragInput = nil
+	dragStart = nil
+	local dragPos = nil
+	function updateInput(input)
+		local Delta = input.Position - dragStart
+		local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	end
+	Frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = Frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	Frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragToggle then
+			updateInput(input)
+		end
+	end)
+end
+
+dragify(Main)
+
+UICorner.Parent = Main
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel.Position = UDim2.new(0.103066452, 0, 0.0307087991, 0)
+TextLabel.Size = UDim2.new(0, 552, 0, 42)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Void Hub by LittleDev#4216"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_2.Parent = TextLabel
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 0, 127)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 0, 255))}
+UIGradient.Parent = TextLabel
+
+ScrollingFrame.Parent = Main
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Position = UDim2.new(0.0177236535, 0, 0.185714304, 0)
+ScrollingFrame.Size = UDim2.new(0, 673, 0, 341)
+
+DarkDex.Name = "DarkDex"
+DarkDex.Parent = ScrollingFrame
+DarkDex.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+DarkDex.Position = UDim2.new(0.0145952469, 0, 0.0100434516, 0)
+DarkDex.Size = UDim2.new(0, 642, 0, 50)
+DarkDex.Font = Enum.Font.SourceSans
+DarkDex.Text = "Dark Dex (click to execute)"
+DarkDex.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkDex.TextScaled = true
+DarkDex.TextSize = 14.000
+DarkDex.TextWrapped = true
+
+UICorner_3.Parent = DarkDex
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = ScrollingFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+InfiniteYield.Position = UDim2.new(0.0145952469, 0, 0.0765290409, 0)
+InfiniteYield.Size = UDim2.new(0, 642, 0, 50)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Infinite Yield (click to execute)"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextScaled = true
+InfiniteYield.TextSize = 14.000
+InfiniteYield.TextWrapped = true
+
+UICorner_4.Parent = InfiniteYield
+
+UTG.Name = "UTG"
+UTG.Parent = ScrollingFrame
+UTG.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+UTG.Position = UDim2.new(0.0145952469, 0, 0.146983579, 0)
+UTG.Size = UDim2.new(0, 642, 0, 50)
+UTG.Font = Enum.Font.SourceSans
+UTG.Text = "UTG (click to execute)"
+UTG.TextColor3 = Color3.fromRGB(255, 255, 255)
+UTG.TextScaled = true
+UTG.TextSize = 14.000
+UTG.TextWrapped = true
+
+UICorner_5.Parent = UTG
+
+FunkyFriday.Name = "FunkyFriday"
+FunkyFriday.Parent = ScrollingFrame
+FunkyFriday.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+FunkyFriday.Position = UDim2.new(0.0145952469, 0, 0.212892681, 0)
+FunkyFriday.Size = UDim2.new(0, 642, 0, 50)
+FunkyFriday.Font = Enum.Font.SourceSans
+FunkyFriday.Text = "Funky Friday Autoplayer (click to execute)"
+FunkyFriday.TextColor3 = Color3.fromRGB(255, 255, 255)
+FunkyFriday.TextScaled = true
+FunkyFriday.TextSize = 14.000
+FunkyFriday.TextWrapped = true
+
+UICorner_6.Parent = FunkyFriday
+
+ButterloafCannon.Name = "ButterloafCannon"
+ButterloafCannon.Parent = ScrollingFrame
+ButterloafCannon.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+ButterloafCannon.Position = UDim2.new(0.0145952469, 0, 0.277665406, 0)
+ButterloafCannon.Size = UDim2.new(0, 642, 0, 50)
+ButterloafCannon.Font = Enum.Font.SourceSans
+ButterloafCannon.Text = "Butterloaf Cannon (for Life In Paradise) (click to execute)"
+ButterloafCannon.TextColor3 = Color3.fromRGB(255, 255, 255)
+ButterloafCannon.TextScaled = true
+ButterloafCannon.TextSize = 14.000
+ButterloafCannon.TextWrapped = true
+
+UICorner_7.Parent = ButterloafCannon
+
+Prozo.Name = "Prozo"
+Prozo.Parent = ScrollingFrame
+Prozo.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+Prozo.Position = UDim2.new(0.0145952469, 0, 0.344710857, 0)
+Prozo.Size = UDim2.new(0, 642, 0, 50)
+Prozo.Font = Enum.Font.SourceSans
+Prozo.Text = "Prozo's Blue Gui (Pet Simulator X) (click to execute)"
+Prozo.TextColor3 = Color3.fromRGB(255, 255, 255)
+Prozo.TextScaled = true
+Prozo.TextSize = 14.000
+Prozo.TextWrapped = true
+
+UICorner_8.Parent = Prozo
+
+Hatch.Name = "Hatch"
+Hatch.Parent = ScrollingFrame
+Hatch.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+Hatch.Position = UDim2.new(0.0145952469, 0, 0.409483582, 0)
+Hatch.Size = UDim2.new(0, 642, 0, 50)
+Hatch.Font = Enum.Font.SourceSans
+Hatch.Text = "Hatch Script (Pet Simulator X) (click to execute)"
+Hatch.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hatch.TextScaled = true
+Hatch.TextSize = 14.000
+Hatch.TextWrapped = true
+
+UICorner_9.Parent = Hatch
+
+Whacky.Name = "Whacky"
+Whacky.Parent = ScrollingFrame
+Whacky.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+Whacky.Position = UDim2.new(0.0145952469, 0, 0.476529032, 0)
+Whacky.Size = UDim2.new(0, 642, 0, 50)
+Whacky.Font = Enum.Font.SourceSans
+Whacky.Text = "Whacky Wizards Gui (click to execute)"
+Whacky.TextColor3 = Color3.fromRGB(255, 255, 255)
+Whacky.TextScaled = true
+Whacky.TextSize = 14.000
+Whacky.TextWrapped = true
+
+UICorner_10.Parent = Whacky
+
+Pig.Name = "Pig"
+Pig.Parent = ScrollingFrame
+Pig.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+Pig.Position = UDim2.new(0.0145952469, 0, 0.5469836, 0)
+Pig.Size = UDim2.new(0, 642, 0, 50)
+Pig.Font = Enum.Font.SourceSans
+Pig.Text = "Piggy Gui (click to execute)"
+Pig.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pig.TextScaled = true
+Pig.TextSize = 14.000
+Pig.TextWrapped = true
+
+UICorner_11.Parent = Pig
+
+Adopt.Name = "Adopt"
+Adopt.Parent = ScrollingFrame
+Adopt.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+Adopt.Position = UDim2.new(0.0145952469, 0, 0.5469836, 0)
+Adopt.Size = UDim2.new(0, 642, 0, 50)
+Adopt.Font = Enum.Font.SourceSans
+Adopt.Text = "Adopt Me Gui (click to execute)"
+Adopt.TextColor3 = Color3.fromRGB(255, 255, 255)
+Adopt.TextScaled = true
+Adopt.TextSize = 14.000
+Adopt.TextWrapped = true
+
+UICorner_12.Parent = Adopt
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = ScrollingFrame
+Arsenal.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+Arsenal.Position = UDim2.new(0.0145952469, 0, 0.615165412, 0)
+Arsenal.Size = UDim2.new(0, 642, 0, 50)
+Arsenal.Font = Enum.Font.SourceSans
+Arsenal.Text = "Arsenal Gui (click to execute)"
+Arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.TextScaled = true
+Arsenal.TextSize = 14.000
+Arsenal.TextWrapped = true
+
+UICorner_13.Parent = Arsenal
+
+Build.Name = "Build"
+Build.Parent = ScrollingFrame
+Build.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+Build.Position = UDim2.new(0.0145952469, 0, 0.6810745, 0)
+Build.Size = UDim2.new(0, 642, 0, 50)
+Build.Font = Enum.Font.SourceSans
+Build.Text = "Build A Boat For Treasure Gui (click to execute)"
+Build.TextColor3 = Color3.fromRGB(255, 255, 255)
+Build.TextScaled = true
+Build.TextSize = 14.000
+Build.TextWrapped = true
+
+UICorner_14.Parent = Build
+
+ZO.Name = "ZO"
+ZO.Parent = ScrollingFrame
+ZO.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+ZO.Position = UDim2.new(0.0145952469, 0, 0.749256313, 0)
+ZO.Size = UDim2.new(0, 642, 0, 50)
+ZO.Font = Enum.Font.SourceSans
+ZO.Text = "ZOぞ Gui (click to execute)"
+ZO.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZO.TextScaled = true
+ZO.TextSize = 14.000
+ZO.TextWrapped = true
+
+UICorner_15.Parent = ZO
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.917832196, 0, 0, 0)
+Close.Size = UDim2.new(0, 47, 0, 40)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Click:Connect(function()
+	Main.Visible = false
+	Open.Visible = true
+end)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 0, 127)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 0, 255))}
+UIGradient_2.Parent = Main
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Open.Position = UDim2.new(0.796638131, 0, 0.87140435, 0)
+Open.Size = UDim2.new(0, 78, 0, 50)
+Open.Visible = false
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+Open.MouseButton1Click:Connect(function()
+	Open.Visible = false
+	Main.Visible = true
+end)
+
+UICorner_16.Parent = Open
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 0, 127)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 0, 255))}
+UIGradient_3.Parent = Open
+
+Updates.Name = "Updates"
+Updates.Parent = ScreenGui
+Updates.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+Updates.Position = UDim2.new(0.268943429, 0, 0.267343491, 0)
+Updates.Size = UDim2.new(0, 401, 0, 337)
+
+UICorner_17.Parent = Updates
+
+HubOpener.Name = "Hub Opener"
+HubOpener.Parent = Updates
+HubOpener.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+HubOpener.BackgroundTransparency = 0.500
+HubOpener.Position = UDim2.new(0.249376565, 0, 0.783382773, 0)
+HubOpener.Size = UDim2.new(0, 200, 0, 50)
+HubOpener.Font = Enum.Font.SourceSans
+HubOpener.Text = "Open Hub"
+HubOpener.TextColor3 = Color3.fromRGB(255, 255, 255)
+HubOpener.TextScaled = true
+HubOpener.TextSize = 14.000
+HubOpener.TextWrapped = true
+HubOpener.MouseButton1Click:Connect(function()
+	Updates.Visible = false
+	Main.Visible = true
+end)
+
+function dragify2(Frame)
+	dragToggle = nil
+	local dragSpeed = 0
+	dragInput = nil
+	dragStart = nil
+	local dragPos = nil
+	function updateInput(input)
+		local Delta = input.Position - dragStart
+		local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	end
+	Frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = Frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	Frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragToggle then
+			updateInput(input)
+		end
+	end)
+end
+
+dragify2(HubOpener)
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 0, 127)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 0, 255))}
+UIGradient_4.Parent = HubOpener
+
+UICorner_18.Parent = HubOpener
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 0, 127)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 0, 255))}
+UIGradient_5.Parent = Updates
+
+TextLabel_2.Parent = Updates
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.057356596, 0, 0.0534124635, 0)
+TextLabel_2.Size = UDim2.new(0, 354, 0, 51)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Void Hub Updates"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 0, 127)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 0, 255))}
+UIGradient_6.Parent = TextLabel_2
+
+Line.Name = "Line"
+Line.Parent = Updates
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.Position = UDim2.new(0, 0, 0.201780409, 0)
+Line.Size = UDim2.new(0, 401, 0, 9)
+
+UICorner_19.Parent = Line
+
+ScrollingFrame_2.Parent = Updates
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_2.BackgroundTransparency = 1.000
+ScrollingFrame_2.Position = UDim2.new(0.0349127166, 0, 0.252225518, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 375, 0, 170)
+
+TextLabel_3.Parent = ScrollingFrame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.229333326, 0, 0.00588235306, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Realease"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = ScrollingFrame_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.229333326, 0, 0.0874847248, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Alot of buttons"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+--Scripts:
+
+Build.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleDeveloperYT/hacks/main/babft"))()	
+end)
+
+Arsenal.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+ZO.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Aidez/ZO/main/IM%20ZO%20HARD"))()
+end)
+
+ButterloafCannon.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleDeveloperYT/hacks/main/butterloafcannon"))()
+end)
+
+DarkDex.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleDeveloperYT/hacks/main/darkdex"))
+end)
+
+Whacky.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/WackyWizards.lua"))()
+end)
+
+Prozo.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/95HthyJq"))()
+end)
+
+InfiniteYield.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Hatch.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/PetSimulatorXV2.lua",true))()
+end)
+
+Adopt.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+UTG.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleDeveloperYT/hacks/main/utg"))()
+end)
+
+FunkyFriday.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end)
+
+Pig.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Piggy/Piggy"))()
+end)
