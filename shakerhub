@@ -32,7 +32,7 @@ local Arsenal = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local Build = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
-local RoBeat = Instance.new("TextButton")
+local ZO = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
 local Close = Instance.new("TextButton")
 
@@ -285,19 +285,19 @@ Build.TextWrapped = true
 
 UICorner_14.Parent = Build
 
-RoBeat.Name = "RoBeat"
-RoBeat.Parent = Main
-RoBeat.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-RoBeat.Position = UDim2.new(0.0426996946, 0, 0.851694882, 0)
-RoBeat.Size = UDim2.new(0, 200, 0, 50)
-RoBeat.Font = Enum.Font.SourceSans
-RoBeat.Text = "RoBeats Gui"
-RoBeat.TextColor3 = Color3.fromRGB(255, 255, 255)
-RoBeat.TextScaled = true
-RoBeat.TextSize = 14.000
-RoBeat.TextWrapped = true
+ZO.Name = "ZO"
+ZO.Parent = Main
+ZO.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+ZO.Position = UDim2.new(0.0426996946, 0, 0.851694882, 0)
+ZO.Size = UDim2.new(0, 200, 0, 50)
+ZO.Font = Enum.Font.SourceSans
+ZO.Text = "ZOぞ Gui"
+ZO.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZO.TextScaled = true
+ZO.TextSize = 14.000
+ZO.TextWrapped = true
 
-UICorner_15.Parent = RoBeat
+UICorner_15.Parent = ZO
 
 Close.Name = "Close"
 Close.Parent = Main
@@ -362,6 +362,6 @@ Build.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleDeveloperYT/hacks/main/babft"))()
 end)
 
-RoBeat.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacks/RoBeats/master/Main.lua"))();
+ZO.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Aidez/ZO/main/IM%20ZO%20HARD"))()
 end)
