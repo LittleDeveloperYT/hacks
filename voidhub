@@ -129,13 +129,13 @@ ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.Position = UDim2.new(0.0177236535, 0, 0.185714304, 0)
 ScrollingFrame.Size = UDim2.new(0, 673, 0, 341)
 
-DarkDex.Name = "DarkDex"
+DarkDex.Name = "WalkOnWalls"
 DarkDex.Parent = ScrollingFrame
 DarkDex.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
 DarkDex.Position = UDim2.new(0.0145952469, 0, 0.0100434516, 0)
 DarkDex.Size = UDim2.new(0, 642, 0, 50)
 DarkDex.Font = Enum.Font.SourceSans
-DarkDex.Text = "Dark Dex (click to execute)"
+DarkDex.Text = "Walk on walls (click to execute)"
 DarkDex.TextColor3 = Color3.fromRGB(255, 255, 255)
 DarkDex.TextScaled = true
 DarkDex.TextSize = 14.000
@@ -459,7 +459,7 @@ ButterloafCannon.MouseButton1Click:Connect(function()
 end)
 
 DarkDex.MouseButton1Click:Connect(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleDeveloperYT/hacks/main/darkdex"))
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleDeveloperYT/hacks/main/walkonwalls"))
 end)
 
 Whacky.MouseButton1Click:Connect(function()
