@@ -303,7 +303,7 @@ ZO.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
 ZO.Position = UDim2.new(0.0145952469, 0, 0.749256313, 0)
 ZO.Size = UDim2.new(0, 642, 0, 50)
 ZO.Font = Enum.Font.SourceSans
-ZO.Text = "ZOぞ Gui (click to execute)"
+ZO.Text = "Arsenal Gui (click to execute)"
 ZO.TextColor3 = Color3.fromRGB(255, 255, 255)
 ZO.TextScaled = true
 ZO.TextSize = 14.000
@@ -451,7 +451,7 @@ Arsenal.MouseButton1Click:Connect(function()
 end)
 
 ZO.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Aidez/ZO/main/IM%20ZO%20HARD"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleDeveloperYT/hacks/main/ansomia"))()
 end)
 
 ButterloafCannon.MouseButton1Click:Connect(function()
